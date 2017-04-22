@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#18a188"
+    tools:context="com.example.nare.xo.MainActivity">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Player 1"
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    android:id="@+id/p1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p1"
+        android:text="0"
+        android:id="@+id/play1"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginLeft="30dp"/>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="New Game"
+
+        android:layout_marginTop="5dp"
+        android:background="#3a7c7b"
+        android:id="@+id/btnnew"/>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="#3a7c7b"
+
+        android:text="Restart"
+        android:layout_below="@id/btnnew"
+        android:id="@+id/btnres"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:id="@+id/p2"
+        android:layout_toEndOf="@id/btnnew"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p1"
+        android:text="0"
+        android:id="@+id/play2"
+        android:layout_toEndOf="@id/btnnew"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginLeft="70dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginTop="120dp"
+        android:weightSum="3"
+        android:background="#3a7c7b"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#18a188"
+            android:textSize="80dp" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="#18a188"
+            android:shadowColor="@color/colorPrimaryDark"
+            android:textSize="80dp"/>
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="#18a188"
+            android:textSize="80dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:weightSum="3">
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#18a188"
+            android:textSize="80dp"/>
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#18a188"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textSize="80dp"/>
+        <Button
+            android:id="@+id/btn6"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#18a188"
+            android:layout_weight="1"
+            android:textSize="80dp"/>
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="match_parent"
+            android:background="#18a188"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="80dp"
+            />
+        <Button
+            android:id="@+id/btn8"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#18a188"
+            android:layout_weight="1"
+            android:textSize="80dp"/>
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#18a188"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textSize="80dp"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+</RelativeLayout>
